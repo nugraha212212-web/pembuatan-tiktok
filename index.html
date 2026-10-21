@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Downloader Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>TT <span>TOOLS</span></h2>
+        <p>Video Downloader</p>
+    </header>
+
+    <main class="container">
+        <div class="logo">♪</div>
+
+        <h1>TikTok Downloader</h1>
+        <p class="description">
+            Masukkan link TikTok untuk memproses video.
+        </p>
+
+        <form id="downloadForm">
+            <label for="videoUrl">Link video TikTok</label>
+
+            <div class="input-box">
+                <input
+                    type="url"
+                    id="videoUrl"
+                    placeholder="Tempel link TikTok di sini..."
+                    required
+                >
+                <button type="button" id="pasteBtn">
+                    Tempel
+                </button>
+            </div>
+
+            <button type="submit" class="download-btn">
+                Proses Link
+            </button>
+        </form>
+
+        <div id="result" class="result" hidden>
+            <h3>Link berhasil diperiksa!</h3>
+            <p id="message"></p>
+            <a
+                id="openVideo"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Buka Video TikTok
+            </a>
+        </div>
+
+        <div class="info">
+            <h3>Cara menggunakan</h3>
+            <ol>
+                <li>Buka video TikTok yang ingin digunakan.</li>
+                <li>Salin tautan video tersebut.</li>
+                <li>Tempel tautan pada kolom di atas.</li>
+                <li>Tekan tombol Proses Link.</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 TT Tools | Dibuat untuk belajar coding</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
